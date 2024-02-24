@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="#BCD4F7"
     android:layout_height="match_parent"
-    tools:context=".ConstraintActivity">
+    tools:context=".ConstrainActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -14,21 +14,24 @@
         android:layout_marginTop="4dp"
         android:src="@drawable/google"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
 
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:layout_editor_absoluteX="30dp" />
+        tools:layout_editor_absoluteX="30dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/back1"
         android:layout_width="274dp"
         android:layout_height="54dp"
         android:layout_marginTop="56dp"
-        android:text="Regresar al menú"
+        android:text="@string/regresar_al_men"
         app:layout_constraintTop_toBottomOf="@+id/calendarView"
-        tools:layout_editor_absoluteX="67dp" />
+        tools:layout_editor_absoluteX="67dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
